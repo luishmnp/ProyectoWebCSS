@@ -1,0 +1,77 @@
+/* VARIABLES CSS */
+/* EL ROOT ES EL SELECTOR PADRE */
+:root {
+    --colorPrimario: #EC111A;
+    --colorSecundario: #082BA5;
+    --colorTerciario: #007BDF;
+    --colorTitulos: #282D31;
+    --colorParrafos: #53575A;
+    --colorSombras: #282D31;
+}
+
+/* SELECTOR UNIVERSAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: hsl(189, 49%, 65%);
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 1px 0px 10px var(--colorSombras);
+    
+}
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__img-logo{
+    height: 60px;
+}
+.menu__btn-menu{
+    display: none;
+}
+.menu__enlaces a{
+    font-family:'Poppins' ;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    color: #000000;
+}
+.menu__enlaces a:hover{
+    color:var(--colorPrimario) 
+}
+
+@media screen and (max-width: 1023px) {
+    .menu{
+        flex-direction: column ;
+        
+    }
+    .menu__logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+
+    }
+    .menu__btn-menu{
+    display: block; 
+    color: var(--colorPrimario); 
+    font-size: 1.5em;
+    }
+    .menu__enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
