@@ -17,7 +17,7 @@
 }
 
 header{
-    background-color: hsl(189, 49%, 65%);
+    background-color: hsl(0, 0%, 100%);
     position: fixed;
     top:0;
     width: 100%;
@@ -48,7 +48,7 @@ header{
     color: #000000;
 }
 .menu__enlaces a:hover{
-    color:var(--colorPrimario) 
+    color: #D92323; 
 }
 
 @media screen and (max-width: 1023px) {
@@ -75,3 +75,71 @@ header{
         flex-direction: column;
     }
 }
+
+/* INICIO DE BANNER */
+.mainbanner{
+     position: relative;
+     padding: 24em 14em;
+     /* background-color: var(--colorSecundario); */
+     top: 60px;
+     background: linear-gradient(to right, #0B192C , #1E3E62);
+    }
+.mainbanner::after{
+    content:"" ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: var(--colorSecundario); */
+    mix-blend-mode:color;
+    opacity: .9;
+}
+.mainbanner__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .2;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    z-index: 20;
+    position: relative;
+}
+.centrado{
+    display: block;
+    margin: auto;
+}
+.mainbanner__data{
+    text-align: center;
+}
+.mainbanner__titulo{
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 2.5em;
+    }
+.mainbanner__parrafo{
+    color: #E2E8F0 ;
+    font-family: 'Poppins';
+    font-size: 1.2em;
+}
+.mainbanner__boton2{
+    background-color: #000000;
+    color:#fff ;
+    padding: 1em 1.2em;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin: 35px 20px;
+    
+}
+.mainbanner__boton2 a:hover{
+    color: #D92323; 
+}
+/* FIN DE BANNER */
