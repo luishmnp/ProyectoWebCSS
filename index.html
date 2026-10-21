@@ -1,87 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="js/WE_MC_03_jquery.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Web SENATI</title>
+  <script src="js/WE_MC_03_jquery.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Web SENATI</title>
 
-    <!-- FAVICON Y/O LOGOTIPO DE PAGINA -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- FAVICON Y/O LOGOTIPO DE PAGINA -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-    <!-- LIBRERIA DE FUENTES -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- LIBRERIA DE FUENTES -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <!-- FRAMEWORK DE BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+  <!-- FRAMEWORK DE BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <!-- LIBRERIA DE ICONOS -->
-    <script
-      src="https://kit.fontawesome.com/812c8ee19a.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- LIBRERIA DE ICONOS -->
+  <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
 
-    <!-- HOJA DE ESTILOS -->
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+  <!-- HOJA DE ESTILOS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
 <body>
-     <!-- MENÚ DE NAVEGACIÓN -->
-    <header id="header">
-      <nav class="menu">
-        <div class="menu__logo">
-          <a href="#">
-            <img src="img/Logo.svg" alt="" class="img-fluid menu__img-logo" />
-          </a>
-          <a href="#" class="menu__btn-menu" id="btn-menu">
-            <i class="fa-solid fa-bars icono-menu"></i>
-          </a>
-        </div>
-        <div class="menu__enlaces" id="enlaces">
-          <a href="index.html">INICIO</a>
-          <a href="cursos.html">CURSOS</a>
-          <a href="diplomados.html">DIPLOMADOS</a>
-          <a href="contactos.html">CONTACTOS</a>
-          <a href="registro.html">REGISTRO</a>
-          <a href="login.html">LOGIN</a>
-        </div>
-      </nav>
-    </header>
-    <!-- FIN DE MENÚ -->
-    <script src="js/WE_MC_02_headroom.min.js"></script>
-    <script src="js/WE_MC_04_menu-flex.js"></script>
-
-    <!-- Inicio de Banner -->
-    <div class="mainbanner">
-
-      <img src="img/banner-5.jpg" alt="" class="mainbanner__img">
-
-      <div class="container">
-
-          <div class="row centrado">
-
-              <div class="mainbanner__data">
-                  
-                  <h1 class="mainbanner__titulo"> Especialízate con nosotros</h1>
-
-                  <p class="mainbanner__parrafo">
-                    Especialízate y certifícate en los programas informáticos <br> más demandados en el mercado laboral actual.
-                  </p>
-
-                  
-                  <a href="#" class="mainbanner__boton2">Ver Cursos</a>
-                  <a href="#" class="mainbanner__boton2">Ver Especializaciones</a>
-              </div>
-          </div>
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <header id="header">
+    <nav class="menu">
+      <div class="menu__logo">
+        <a href="#">
+          <img src="img/Logo.svg" alt="" class="img-fluid menu__img-logo" />
+        </a>
+        <a href="#" class="menu__btn-menu" id="btn-menu">
+          <i class="fa-solid fa-bars icono-menu"></i>
+        </a>
       </div>
+      <div class="menu__enlaces" id="enlaces">
+        <a href="index.html">INICIO</a>
+        <a href="cursos.html">CURSOS</a>
+        <a href="diplomados.html">DIPLOMADOS</a>
+        <a href="contactos.html">CONTACTOS</a>
+        <a href="registro.html">REGISTRO</a>
+        <a href="login.html">LOGIN</a>
+      </div>
+    </nav>
+  </header>
+  <!-- FIN DE MENÚ -->
+
+
+  <!-- Inicio de Banner -->
+  <div class="mainbanner">
+
+    <img src="img/banner-5.jpg" alt="" class="mainbanner__img">
+
+    <div class="container">
+
+      <div class="row centrado">
+
+        <div class="mainbanner__data">
+
+          <h1 class="mainbanner__titulo"> Especialízate con nosotros</h1>
+
+          <p class="mainbanner__parrafo">
+            Especialízate y certifícate en los programas informáticos <br> más demandados en el mercado laboral actual.
+          </p>
+
+
+          <a href="#" class="mainbanner__boton2">Ver Cursos</a>
+          <a href="#" class="mainbanner__boton2">Ver Especializaciones</a>
+        </div>
+      </div>
+    </div>
   </div>
-    <!-- Fin de Banner -->
+  <!-- Fin de Banner -->
+<br><br><br><br><br>
+  <!-- Beneficios -->
+  <h1 class="card__titulo centrar"> Nuestros Beneficios</h1>
+
+
+  <main class="container">
+
+    <div class="cards__grid">
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/beneficio-1.jpg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/beneficio-2.jpg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/beneficio-3.jpg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/beneficio-4.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Fin Beneficios -->
+
+  <!-- Titulo -->
+
+  <h1 class="card__titulo centrar">Cursos Destacados</h1>
+
+  <!-- Fin Titulo -->
+
+  <!-- INICIO DE MAIN CARDS -->
+  <main class="container">
+
+    <div class="cards__grid">
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-1.jpg" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> Mega curso de
+              <br> AutoCAD 2021
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-10.jpg" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> MACROS Y PROGRAMACION
+              <br> VBA 2021
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-14.jpg" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> ESPECIALISTA EN
+              <br> EXCEL PROFESIONAL 2021
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-13.jpg" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> DISEÑO WEB
+              <br> RESPONSIVE
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-9.jpg" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> ESPECIALISTA EN
+              <br> POWER BI 2022
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-3.jpg" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> EXCEL FINANCIERO
+              <br> 2022
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-4.jpg" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> SQL SERVER
+              <br> 2019
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card__img">
+          <a href="#"><img src="img/curso-2.png" alt=""></a>
+        </div>
+
+        <div class="card__content">
+          <a href="#">
+            <h3 class="card__title"> ADOBE ILLUSTRATOR
+              <br>
+              <CC:ie></CC:ie> 2022
+            </h3>
+          </a>
+
+          <a href="#" class="card__info to-center">Conocer más </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/WE_MC_02_headroom.min.js"></script>
+  <script src="js/WE_MC_04_menu-flex.js"></script>
+
 </body>
+
 </html>
