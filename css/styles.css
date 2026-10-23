@@ -228,3 +228,32 @@ h1{
     text-align: center;
     margin: 1em;
 }
+
+footer{
+    background-color: var(--colorSombras);
+    color: #fff;
+    padding: 3em 0;
+
+}
+
+.iconos-pie{
+    font-size: 3em;
+
+}
+.iconos-pie:hover{
+    color: var(--colorPrimario);
+
+}
+
+.pie, .info{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.derechos{
+    background-color: var(--colorParrafos);
+    color: #fff;
+    font-family: 'Poppins';
+    padding: .2em 0;
+}
