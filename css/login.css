@@ -1,0 +1,163 @@
+/* VARIABLES CSS */
+/* EL ROOT ES EL SELECTOR PADRE */
+:root {
+    --colorPrimario: #EC111A;
+    --colorSecundario: #082BA5;
+    --colorTerciario: #007BDF;
+    --colorTitulos: #282D31;
+    --colorParrafos: #53575A;
+    --colorSombras: #282D31;
+    --colorbordes: #DFE0E0;
+}
+
+/* SELECTOR UNIVERSAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: hsl(0, 0%, 100%);
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 1px 0px 10px var(--colorSombras);
+    
+}
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__img-logo{
+    height: 60px;
+}
+.menu__btn-menu{
+    display: none;
+}
+.menu__enlaces a{
+    font-family:'Poppins' ;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    color: #000000;
+}
+.menu__enlaces a:hover{
+    color: #D92323; 
+}
+
+@media screen and (max-width: 1023px) {
+    .menu{
+        flex-direction: column ;
+        
+    }
+    .menu__logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+
+    }
+    .menu__btn-menu{
+    display: block; 
+    color: var(--colorPrimario); 
+    font-size: 1.5em;
+    }
+    .menu__enlaces a{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+body{
+    background-image: url(../img/fondo-login.jpg);
+    background-size: cover;
+}
+
+.container {
+    background: #fff;
+    padding: 35px 40px;
+    border: 1px solid var(--colorbordes);
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0.5px 0.5px 10px var(--colorPrimario);
+    margin: auto; 
+}
+
+/* Tamaño controlado para el logo pequeño de la tarjeta */
+.formulario__login img.img-fluid {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 75px;
+}
+
+/* Estilo del título centrado */
+.titulo__form {
+    text-align: center;
+    font-size: 15px;
+    color: var(--colorTitulos);
+    font-weight: normal;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Etiquetas y campos de texto */
+.formulario__login label {
+    display: block;
+    font-size: 13px;
+    color: var(--colorTitulos);
+    margin-bottom: 5px;
+}
+
+.formulario__login input[type="text"],
+.formulario__login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--colorbordes);
+    font-size: 13px;
+    outline: none;
+}
+
+.formulario__login input[type="text"],
+.formulario__login input[type="password"] {
+    border-color: var(--colorPrimario);
+}
+
+.formulario__login .boton {
+    width: 100%;
+    background-color: var(--colorPrimario);
+    color: white;
+    border: none;
+    padding: 11px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.formulario__login .boton:hover {
+    background-color: #b71c1c;
+}
+.enlace-olvido {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enlace-olvido a {
+    color: var(--colorPrimario);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.enlace-olvido a:hover {
+    text-decoration: underline;
+}
