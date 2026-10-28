@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="js/WE_MC_03_jquery.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Web SENATI</title>
+
+  <!-- FAVICON Y/O LOGOTIPO DE PAGINA -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!-- LIBRERIA DE FUENTES -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- FRAMEWORK DE BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- LIBRERIA DE ICONOS -->
+  <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+  <!-- SCRIPT DE GOOGLE RECAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- HOJA DE ESTILOS -->
+  <link rel="stylesheet" href="css/huancayo.css" />
+</head>
+<body>
+    <article class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <img src="img/caja-huancayo.jpg" alt="" class="img-fluid img__login">
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-6 col__derecha">
+            <img src="img/logo-huancayo.svg" alt="" class="img-fluid logo__login">
+            <h3 class="titulo__login">Bienvenido Colaborador</h3>
+            <p class="subtitulo__login">Ingrese sus credenciales</p>
+
+            <form>
+                <div class="mb-3 campo__icono">
+                    <input type="text" class="user__login" placeholder="Usuario">
+                   
+                </div>
+                
+                <div class="mb-3 campo__icono">
+                    <input type="password" class="password__login" placeholder="Contraseña">
+                    
+                </div>
+
+                <div class="mb-3 fila__recordar d-flex justify-content-between align-items-center">
+                <!-- INTERRUPTOR DE BOOTSTRAP -->
+                <div class="form-check form-switch m-0 boton__check">
+                    <input class="form-check-input" type="checkbox" role="switch" id="recordarUsuario">
+                    <label class="form-check-label text-muted small" for="recordarUsuario">Recordar usuario</label>
+                </div>
+ 
+                <a href="#" class="link__olvido ">¿Olvidó sus credenciales?</a>
+                </div>
+
+                <!-- RECAPTCHA REAL -->
+                <div class="mb-3 d-flex justify-content-center">
+                    <div class="g-recaptcha" data-sitekey="6LcKjwQuAAAAAE3dy8-SdhY64vqaq6-5Qg_d9ERY"></div>
+                </div>
+             
+                <button type="submit" class="boton__enviar">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</article>
+</body>
+</html>
