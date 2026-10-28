@@ -10,14 +10,14 @@
     --colorbordes: #DFE0E0;
 }
 
-/* SELECTOR UNIVERSAL CORREGIDO */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* FUENTE GLOBAL Y CENTRADO DE PANTALLA */
+
 body {
     font-family: 'Poppins';
     background-color: #ffffff;
@@ -26,20 +26,19 @@ body {
     align-items: center;
 }
 
-/* CENTRAR LOS TÍTULOS Y EL CONTENIDO DE LA DERECHA */
+
 .col-xs-12.col-sm-6.col-md-6:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center;  /* Centra los textos */
+    align-items: center; 
+    text-align: center;  
     padding: 30px;
 }
 
-/* ASEGURAR QUE EL FORMULARIO Y LOGO SE ADAPTEN AL CENTRO */
 .col-xs-12.col-sm-6.col-md-6:last-child form {
     width: 100%;
-    max-width: 380px; /* Ancho máximo para que no se estire demasiado */
+    max-width: 380px;
 }
 
 .logo__login {
